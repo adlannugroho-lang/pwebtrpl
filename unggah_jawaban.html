@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Unggah Jawaban - Sistem AI</title>
+    <link rel="stylesheet" href="style_ai.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Koreksi Ujian Otomatis Berbasis AI</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Beranda</a> | 
+        <a href="unggah_jawaban.html">Unggah Ujian</a> | 
+        <a href="dashboard.html">Dashboard Nilai</a>
+    </nav>
+
+    <main>
+        <h2>Formulir Unggah Lembar Jawaban</h2>
+        <div class="form-container">
+            <form action="" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="matkul">Mata Kuliah:</label><br>
+                    <input type="text" id="matkul" name="matkul" class="input-control" placeholder="Contoh: Pemrograman Web" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="file_ujian">Unggah File Ujian (PDF/Gambar):</label><br>
+                    <input type="file" id="file_ujian" name="file_ujian" class="input-control" required>
+                </div>
+
+                <!-- Contoh pengujian Cascading Order dengan Inline CSS -->
+                <button type="submit" id="btn-submit" style="margin-top: 10px;">Mulai Koreksi AI</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyek Matkul PWeb</p>
+    </footer>
+</body>
+</html>
