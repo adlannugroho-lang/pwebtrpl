@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <title>Dashboard Nilai - Sistem AI</title>
     <link rel="stylesheet" href="style_ai.css">
 </head>
+
 <body>
-    <header>
-        <h1>Sistem Koreksi Ujian Otomatis Berbasis AI</h1>
-    </header>
-    
-    <nav>
-        <a href="index.html">Beranda</a> | 
-        <a href="unggah_jawaban.html">Unggah Ujian</a> | 
-        <a href="dashboard.html">Dashboard Nilai</a>
-    </nav>
 
-    <main>
-        <section>
-            <h2>Rekapitulasi Hasil Koreksi AI</h2>
-            <div class="table-container">
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>NIM</th>
-                            <th>Nama Mahasiswa</th>
-                            <th>Mata Kuliah</th>
-                            <th>Nilai AI</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1010111</td>
-                            <td>Budi Santoso</td>
-                            <td>Pemrograman Web</td>
-                            <td><span class="nilai-badge">85</span></td>
-                        </tr>
-                        <tr>
-                            <td>1010112</td>
-                            <td>Siti Aminah</td>
-                            <td>Pemrograman Web</td>
-                            <td><span class="nilai-badge">92</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-    </main>
+    <div class="dashboard-grid">
+        <header>
+            <h1>Sistem Koreksi Ujian Otomatis Berbasis AI</h1>
+        </header>
 
-    <footer>
-        <p>&copy; 2026 Proyek Matkul PWeb</p>
-    </footer>
+        <aside>
+            <h3>Navigasi</h3>
+            <a href="index.html">Beranda</a>
+            <a href="unggah_jawaban.html">Unggah Ujian</a>
+            <a href="dashboard.html">Dashboard Nilai</a>
+        </aside>
+
+        <main>
+            <section>
+                <h2>Rekapitulasi Hasil Koreksi AI</h2>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h4>TOTAL DOKUMEN</h4>
+                        <p>120 Berkas</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>RATA-RATA NILAI</h4>
+                        <p>88.5</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>AKURASI KOREKSI AI</h4>
+                        <p>98.4%</p>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <!-- Tabel Data Nilai Tetap Sama -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Proyek Matkul PWeb</p>
+        </footer>
+    </div>
+
 </body>
+
 </html>

@@ -182,3 +182,114 @@ table.data-table tbody tr:hover {
     border-radius: 4px;
     border: 1px solid #86efac;
 }
+
+/* style_ai.css - Flexbox Enhancement */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#btn-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16a34a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#btn-submit:hover {
+    background-color: #15803d;
+}
+
+
+/* Implementation of CSS Flexbox for Form Centering */
+.form-container {
+    background-color: #ffffff;
+    border: 2px solid #3b82f6;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 20px auto;
+
+    /* Penerapan CSS Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Implementation of CSS Grid for Dashboard Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 220px auto; /* Sidebar 220px, Main Konten otomatis */
+    gap: 20px;
+}
+
+.dashboard-grid header, 
+.dashboard-grid footer {
+    grid-column: 1 / 3; /* Membentang dari kolom 1 hingga 3 */
+}
+
+aside {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+aside a {
+    display: block;
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Grid Kartu Statistik Dashboard */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background-color: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h4 {
+    margin: 0;
+    color: #1e3a8a;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-card p {
+    margin: 5px 0 0 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1f2937;
+}
