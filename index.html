@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <title>Beranda - Sistem Koreksi Ujian AI</title>
-    <!-- Menghubungkan External CSS -->
     <link rel="stylesheet" href="style_ai.css">
-    
 </head>
 <body>
     <header>
@@ -16,6 +13,7 @@
     <nav>
         <a href="index.html">Beranda</a> | 
         <a href="unggah_jawaban.html">Unggah Ujian</a> | 
+        <a href="kunci_jawaban.html">Kunci Jawaban</a> | 
         <a href="dashboard.html">Dashboard Nilai</a>
     </nav>
 
@@ -24,10 +22,22 @@
         <p class="deskripsi-sistem">
             Sistem ini menggunakan kecerdasan buatan untuk mengoreksi lembar jawaban mahasiswa secara otomatis, cepat, dan akurat. Dengan platform ini, proses evaluasi ujian dapat dilakukan secara efisien dengan tingkat presisi yang tinggi.
         </p>
+
+        <section style="margin-top: 30px;">
+            <h3>Alur Kerja Sistem:</h3>
+            <ol>
+                <li>Atur Kunci Jawaban & Rubrik Penilaian AI.</li>
+                <li>Unggah Berkas Lembar Jawaban Mahasiswa (PDF/Gambar).</li>
+                <li>AI melakukan OCR & Pemencocokan Jawaban secara otomatis.</li>
+                <li>Pantau Rekapitulasi Hasil Nilai pada Dashboard.</li>
+            </ol>
+        </section>
     </main>
     
     <footer>
         <p>&copy; 2026 Proyek Matkul PWeb</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>

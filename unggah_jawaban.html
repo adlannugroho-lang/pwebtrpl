@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <title>Unggah Jawaban - Sistem AI</title>
     <link rel="stylesheet" href="style_ai.css">
 </head>
+
 <body>
     <header>
         <h1>Sistem Koreksi Ujian Otomatis Berbasis AI</h1>
     </header>
-    
+
     <nav>
-        <a href="index.html">Beranda</a> | 
-        <a href="unggah_jawaban.html">Unggah Ujian</a> | 
+        <a href="index.html">Beranda</a> |
+        <a href="unggah_jawaban.html">Unggah Ujian</a> |
+        <a href="kunci_jawaban.html">Kunci Jawaban</a> |
         <a href="dashboard.html">Dashboard Nilai</a>
     </nav>
 
     <main>
-        <h2 style="display: flex;
-        justify-content: center;    
-        ">Formulir Unggah Lembar Jawaban</h2>
+        <h2>Formulir Unggah Lembar Jawaban Ujian</h2>
         <div class="form-container">
-            <form action="" method="POST" enctype="multipart/form-data">
+            <form id="form-unggah-ujian" action="proses_unggah.php" method="POST" enctype="multipart/form-data"
+                novalidate>
+                <div class="form-group">
+                    <label for="nim">NIM Mahasiswa:</label><br>
+                    <input type="text" id="nim" name="nim" class="input-control" placeholder="Contoh: 230101001"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nama_mahasiswa">Nama Mahasiswa:</label><br>
+                    <input type="text" id="nama_mahasiswa" name="nama_mahasiswa" class="input-control"
+                        placeholder="Contoh: Chelsea Julianti" required>
+                </div>
+
                 <div class="form-group">
                     <label for="matkul">Mata Kuliah:</label><br>
-                    <input type="text" id="matkul" name="matkul" class="input-control" placeholder="Contoh: Pemrograman Web" required>
+                    <input type="text" id="matkul" name="matkul" class="input-control"
+                        placeholder="Contoh: Kecerdasan Buatan" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="file_ujian">Unggah File Ujian (PDF/Gambar):</label><br>
-                    <input type="file" id="file_ujian" name="file_ujian" class="input-control" required>
+                    <label for="file_ujian">Unggah Berkas Ujian (PDF/JPG/PNG):</label><br>
+                    <input type="file" id="file_ujian" name="file_ujian" class="input-control"
+                        accept=".pdf, .jpg, .jpeg, .png" required>
                 </div>
 
-                <!-- Contoh pengujian Cascading Order dengan Inline CSS -->
-                <button type="submit" id="btn-submit" style="margin-top: 10px;">Mulai Koreksi AI</button>
+                <button type="submit" id="btn-submit" style="margin-top: 15px;">Mulai Koreksi AI</button>
             </form>
+
+            <!-- Indikator Loading Progress Bar AI -->
+            <div id="progress-container" style="display: none; margin-top: 20px;">
+                <label>Proses Penilaian AI:</label>
+                <div class="progress-box">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+                <p id="status-proses" class="status-info">Menyiapkan berkas...</p>
+            </div>
         </div>
     </main>
 
     <footer>
         <p>&copy; 2026 Proyek Matkul PWeb</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
+
 </html>

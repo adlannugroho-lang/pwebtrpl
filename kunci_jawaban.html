@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kunci Jawaban - Sistem AI</title>
+    <link rel="stylesheet" href="style_ai.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Koreksi Ujian Otomatis Berbasis AI</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Beranda</a> | 
+        <a href="unggah_jawaban.html">Unggah Ujian</a> | 
+        <a href="kunci_jawaban.html">Kunci Jawaban</a> | 
+        <a href="dashboard.html">Dashboard Nilai</a>
+    </nav>
+
+    <main>
+        <h2>Pengaturan Kunci Jawaban & Rubrik AI</h2>
+        <div class="form-container">
+            <form id="form-kunci">
+                <div class="form-group">
+                    <label for="kunci_matkul">Mata Kuliah:</label><br>
+                    <input type="text" id="kunci_matkul" class="input-control" value="Kecerdasan Buatan" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="soal_1">Kunci Jawaban Soal 1 (Konsep Dasar):</label><br>
+                    <textarea id="soal_1" class="input-control" rows="3">Machine Learning adalah cabang AI yang memungkinkan komputer belajar dari data tanpa diprogram secara eksplisit.</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="soal_2">Kunci Jawaban Soal 2 (Arsitektur):</label><br>
+                    <textarea id="soal_2" class="input-control" rows="3">CNN terdiri dari Convolutional Layer, Pooling Layer, dan Fully Connected Layer.</textarea>
+                </div>
+
+                <button type="button" onclick="alert('Rubrik Kunci Jawaban AI Berhasil Disimpan!')">Simpan Rubrik AI</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyek Matkul PWeb</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

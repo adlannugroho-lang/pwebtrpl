@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Hasil Koreksi - Sistem AI</title>
+    <link rel="stylesheet" href="style_ai.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Koreksi Ujian Otomatis Berbasis AI</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a> | 
+        <a href="dashboard.html">Kembali ke Dashboard</a>
+    </nav>
+
+    <main>
+        <h2>Laporan Detail Hasil Koreksi Ujian</h2>
+        <div id="detail-koreksi-container" class="form-container">
+            <table style="width: 100%; line-height: 2;">
+                <tr>
+                    <td width="30%"><strong>Nama Mahasiswa</strong></td>
+                    <td width="5%">:</td>
+                    <td id="det-nama">-</td>
+                </tr>
+                <tr>
+                    <td><strong>NIM</strong></td>
+                    <td>:</td>
+                    <td id="det-nim">-</td>
+                </tr>
+                <tr>
+                    <td><strong>Mata Kuliah</strong></td>
+                    <td>:</td>
+                    <td id="det-matkul">-</td>
+                </tr>
+                <tr>
+                    <td><strong>Skor AI</strong></td>
+                    <td>:</td>
+                    <td id="det-nilai">-</td>
+                </tr>
+                <tr>
+                    <td><strong>Status AI</strong></td>
+                    <td>:</td>
+                    <td id="det-status">-</td>
+                </tr>
+            </table>
+
+            <hr style="margin: 20px 0;">
+
+            <h3>Catatan & Feedback AI:</h3>
+            <p id="det-feedback" style="background: #f9f9f9; padding: 15px; border-left: 4px solid #007bff;"></p>
+
+            <button onclick="window.location.href='dashboard.html'" style="margin-top: 15px;">Kembali ke Dashboard</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyek Matkul PWeb</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
