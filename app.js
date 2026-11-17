@@ -1,5 +1,4 @@
-/**
- * APP.JS - Sistem Koreksi Ujian Otomatis Berbasis AI
+ /* APP.JS - Sistem Koreksi Ujian Otomatis Berbasis AI
  * Berisi logika validasi form, manajemen LocalStorage, simulasi AI, dan manipulasi DOM.
  */
 
@@ -251,7 +250,7 @@ function inisialisasiDetailKoreksi() {
 // Execution Trigger saat DOM siap
 document.addEventListener("DOMContentLoaded", () => {
     inisialisasiDataAwal();
-    //inisialisasiFormUnggah();
+    inisialisasiFormUnggah();
     inisialisasiDashboard();
     inisialisasiDetailKoreksi();
 });
